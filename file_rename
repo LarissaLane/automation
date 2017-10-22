@@ -1,0 +1,5 @@
+#!/bin/bash
+find . -type f -name 'for_use_*' | while read fname
+do
+echo mv $fname ${fname/for_use_/}
+done 
